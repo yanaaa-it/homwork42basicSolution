@@ -1,7 +1,7 @@
 
 #include "logic.h"
 
-int max(int array[DEFAULT_SIZE], int length) {
+int find_max(int array[DEFAULT_SIZE], int length) {
 	int value = array[0];
 
 	for (int index = 1; index < length; index++)
@@ -14,7 +14,7 @@ int max(int array[DEFAULT_SIZE], int length) {
 	return value;
 }
 
-int min(int array[DEFAULT_SIZE], int length) {
+int find_min(int array[DEFAULT_SIZE], int length) {
 	int value = array[0];
 
 	for (int index = 1; index < length; index++)
@@ -27,7 +27,7 @@ int min(int array[DEFAULT_SIZE], int length) {
 	return value;
 }
 
-double arithmetial_average(int array[DEFAULT_SIZE], int length) {
+double find_arithmetial_average(int array[DEFAULT_SIZE], int length) {
 	double avg = 0;
 
 	for (int index = 0; index < length; index++)
@@ -38,7 +38,7 @@ double arithmetial_average(int array[DEFAULT_SIZE], int length) {
 	return avg / length;
 }
 
-double geometrical_average(int array[DEFAULT_SIZE], int length) {
+double find_geometrical_average(int array[DEFAULT_SIZE], int length) {
 	double avg = 1;
 
 	for (int index = 0; index < length; index++)
